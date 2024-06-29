@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../STYLING/chapters.css">
+    <title>BLUE LOCK | Chapter I</title>
+</head>
+
+<body>
+    <div class="headerdiv">
+         <div class="header-logo">
+            <div class="logo2">
+                <img class="logo" src="../../IMAGES/ASSETS/logo_tilted.png" alt="logo" border="0">
+            </div>
+         </div>
+
+         <div class="header-nav">
+               <a class="nav4" href="../../NAVIGATION/HOMEPAGE.html">
+                  HOME
+               </a>
+               <a class="nav4" href="../../NAVIGATION/page3.html">
+                  TRENDING
+               </a>
+               <a class="nav4" href="../../NAVIGATION/COMPLETED.html">
+                  COMPLETED
+               </a>
+               <a class="nav4" href="../../NAVIGATION/ongoing.html">
+                  ONGOING
+               </a>
+         </div>
+
+         <div class="header-3">
+            <!--
+            <div class="searchdiv">     
+               <div class="container-input">
+                  <input type="text" placeholder="Search" name="text" class="input">
+                  <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+                </div>
+            </div>
+            -->
+         </div>
+    </div>
+    
+    <!--this is the info below the header-->
+    <div class="chapterinfo">
+        <p class="chaptername">  #001 : Dream   </p>
+        <div class="backforward"> <!--back and next buttons-->
+            <a href="../../CHAPLIST/bluelock-story.html"><img src="../../IMAGES/ASSETS/back.png" class="backbtn" alt="back"></a>
+            <a href="CHAP2_BL.html"><img src="../../IMAGES/ASSETS/next.png" class="backbtn" alt="next"></a>
+        </div>
+    </div>
+
+    <div class="scroll_container1"> <!--container for the chapter-->
+        
+        <img src="../../IMAGES/BLUELOCK/CHAP1_Dream.jpeg" alt="Long Image" class="scroll_content"> <!--here's the chapter image-->
+        
+        <ul class="example-2"> <!--this one's the three boxes below the chapter content-->
+            <li class="icon-content">
+                <a href="CHAP2_BL.html"><img src="../../IMAGES/BLUELOCK/bluelock-cpc2.jpg" class="icon-image" alt="Chapter 2"></a>
+                <div class="tooltip">Chapter 2</div> <!--this shows when you hover over the icon-->
+            </li>
+    
+            <li class="icon-content">
+                <a href="../../CHAPLIST/bluelock-story.html"><img src="../../IMAGES/BLUELOCK/CHAPLIST_BL.png" class="icon-image" alt="Chapter List"></a>
+                <div class="tooltip">Chapter List</div>
+            </li>
+    
+            <li class="icon-content">
+                <a href="CHAP3_BL.html"><img src="../../IMAGES/BLUELOCK/bluelock-cpc3.jpg" class="icon-image" alt="Chapter 3"></a>
+                <div class="tooltip">Chapter 3</div>
+            </li>
+          </ul>
+    </div>
+
+    <!--FOOTER-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+    <footer>
+      <div class="footer">
+        <div class="row">
+            <a href="https://www.facebook.com/profile.php?id=61560185023993"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/manga_dos?igsh=YWFpdWZlOGUybGx2"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@mangaDOSofficial"><i class="fa fa-youtube"></i></a>
+            <a href="https://x.com/mangaDOS_ofc"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <a href="../../NAVIGATION/HOMEPAGE.html">About us</a>
+        </div>
+
+        <div class="row">
+          Explore a Portal to Diverse Manga Adventures and Heartfelt Narratives <br>
+          Your gateway to captivating adventures and heartwarming stories &#x047B; Immerse yourself in high-quality manga and comics with DOS
+        </div>
+      </div>
+    </footer>
+
+    <!--here is the scroll to top button-->
+    <a href="#" class="scroll_to_top" id="scrollup">^</a>
+
+    <!--javascript for the scroll to top button-->
+    <script>
+        //get the button & find it with the id scrollup
+        const scrollup = document.getElementById('scrollup');
+
+        //the button will only appear once you scroll down 20px from the top
+        window.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollup.classList.add('show');
+            } else {
+                scrollup.classList.remove('show');
+            }
+        });
+
+        //smoothly scrolls back to top when you click the button
+        scrollup.addEventListener('click', function(e) {
+            //prevents default jumping to the top
+            e.preventDefault(); 
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
+</body>
+</html>
